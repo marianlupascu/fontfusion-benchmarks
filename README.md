@@ -17,7 +17,7 @@
 We introduce **CRAFT** and **TIDE**, the first benchmarks specifically designed for **font-conditioned typography evaluation** in generative models. Released alongside the paper:
 
 > **FontFusion: Enhancing Generative Text in Diffusion Models with Typographic Conditioning**
-> Marian Lupașcu, Nipun Jindal, Ionuț Mironică, Zhaowen Wang — Adobe Research & University of Bucharest
+> Marian Lupașcu, Nipun Jindal, Ionuț Mironică, Zhaowen Wang — Adobe Research
 
 | Benchmark | Full Name | Prompts | Avg. words/text | Focus |
 |-----------|-----------|---------|-----------------|-------|
@@ -27,7 +27,7 @@ We introduce **CRAFT** and **TIDE**, the first benchmarks specifically designed 
 ## 🔥 Updates
 
 * **2026-06-04**: CRAFT and TIDE benchmarks released publicly
-* **2026-06-04**: FontFusion accepted at ICANN 2026
+* **2026-05-29**: FontFusion accepted at ICANN 2026
 
 ## 📁 Files
 
