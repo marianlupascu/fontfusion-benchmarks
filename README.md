@@ -34,9 +34,9 @@ We introduce **CRAFT** and **TIDE**, the first benchmarks specifically designed 
 ```
 benchmarks/
 ├── craft/
-│   └── prompts_1600.txt       # 1,605 prompts, one per line
+│   └── craft.txt       # 1,605 prompts, one per line
 └── tide/
-    └── prompts_100.txt        # 100 prompts, one per line
+    └── tide.txt        # 100 prompts, one per line
 ```
 
 Each line is a self-contained generation prompt. CRAFT prompts use short text segments in minimalist layouts for precise font fidelity measurement. TIDE prompts embed longer quoted texts in richer design contexts to test realistic complexity.
