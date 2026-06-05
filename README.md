@@ -6,7 +6,6 @@
 
 <a href='https://arxiv.org/abs/2606.06066'><img src='https://img.shields.io/badge/arXiv-Preprint-red'></a>
 <img src='https://img.shields.io/badge/ICANN-2026-blue'>
-
 ![GitHub stars](https://img.shields.io/github/stars/marianlupascu/fontfusion-benchmarks?style=social)
 
 **Official benchmark release for FontFusion (ICANN 2026)**
