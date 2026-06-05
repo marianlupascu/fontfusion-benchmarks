@@ -4,8 +4,8 @@
 
 **Benchmarks for Font-Conditioned Image Generation**
 
-<a href='https://arxiv.org/abs/TODO'><img src='https://img.shields.io/badge/arXiv-Preprint-red'></a>
 <img src='https://img.shields.io/badge/ICANN-2026-blue'>
+<a href='https://arxiv.org/abs/2606.06066'><img src='https://img.shields.io/badge/arXiv-Preprint-red'></a>
 ![GitHub stars](https://img.shields.io/github/stars/marianlupascu/fontfusion-benchmarks?style=social)
 
 **Official benchmark release for FontFusion (ICANN 2026)**
@@ -17,7 +17,7 @@
 We introduce **CRAFT** and **TIDE**, the first benchmarks specifically designed for **font-conditioned typography evaluation** in generative models. Released alongside the paper:
 
 > **FontFusion: Enhancing Generative Text in Diffusion Models with Typographic Conditioning**
-> Marian Lupașcu, Nipun Jindal, Ionuț Mironică, Zhaowen Wang — Adobe Research
+> Marian Lupașcu, Nipun Jindal, Ionuț Mironică, Zhaowen Wang — Adobe Research & University of Bucharest
 
 | Benchmark | Full Name | Prompts | Avg. words/text | Focus |
 |-----------|-----------|---------|-----------------|-------|
@@ -34,9 +34,9 @@ We introduce **CRAFT** and **TIDE**, the first benchmarks specifically designed 
 ```
 benchmarks/
 ├── craft/
-│   └── craft.txt       # 1,605 prompts, one per line
+│   └── prompts_1600.txt       # 1,605 prompts, one per line
 └── tide/
-    └── tide.txt        # 100 prompts, one per line
+    └── prompts_100.txt        # 100 prompts, one per line
 ```
 
 Each line is a self-contained generation prompt. CRAFT prompts use short text segments in minimalist layouts for precise font fidelity measurement. TIDE prompts embed longer quoted texts in richer design contexts to test realistic complexity.
@@ -115,7 +115,7 @@ Results are reported as mean per font and as a global mean across all fonts.
 
 Font consistency (FontCLIP): FLUX.1 [dev] + FontFusion achieves **76.52%** vs. **0.91%** for the unconditioned base.
 
-📄 Full results and analysis in the [arXiv paper](https://arxiv.org/abs/TODO)
+📄 Full results and analysis in the [arXiv paper](https://arxiv.org/abs/2606.06066)
 
 ---
 
