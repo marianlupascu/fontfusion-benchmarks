@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use CRAFT or TIDE, please cite the FontFusion paper."
+title: "CRAFT & TIDE: Typography Evaluation Benchmarks"
+authors:
+  - {family-names: Lupașcu, given-names: Marian}
+  - {family-names: Jindal, given-names: Nipun}
+  - {family-names: Mironică, given-names: Ionuț}
+  - {family-names: Wang, given-names: Zhaowen}
+repository-code: "https://github.com/marianlupascu/fontfusion-benchmarks"
+license: CC0-1.0
+preferred-citation:
+  type: conference-paper
+  title: "FontFusion: Enhancing Generative Text in Diffusion Models with Typographic Conditioning"
+  authors:
+    - {family-names: Lupașcu, given-names: Marian}
+    - {family-names: Jindal, given-names: Nipun}
+    - {family-names: Mironică, given-names: Ionuț}
+    - {family-names: Wang, given-names: Zhaowen}
+  collection-title: "Proceedings of the International Conference on Artificial Neural Networks (ICANN)"
+  year: 2026
+  url: "https://arxiv.org/abs/2606.06066"
