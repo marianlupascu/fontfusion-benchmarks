@@ -17,6 +17,8 @@
   <img src="fontfusion_teaser.jpg" width="95%">
   <br><em>Same prompt, five target fonts: FontFusion renders the text in the font shown at the top of each column.</em>
 </p>
+
+
 ---
 
 We introduce **CRAFT** and **TIDE**, the first benchmarks specifically designed for **font-conditioned typography evaluation** in generative models. Released alongside the paper:
