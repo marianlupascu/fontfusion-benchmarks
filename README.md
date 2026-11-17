@@ -137,8 +137,12 @@ Font consistency (FontCLIP): FLUX.1 [dev] + FontFusion achieves **76.52%** vs. *
 @inproceedings{lupascu2026fontfusion,
     author    = {Lupa\c{s}cu, Marian and Jindal, Nipun and Mironic\u{a}, Ionu\c{t} and Wang, Zhaowen},
     title     = {FontFusion: Enhancing Generative Text in Diffusion Models with Typographic Conditioning},
-    booktitle = {Proceedings of the International Conference on Artificial Neural Networks (ICANN)},
-    year      = {2026}
+    booktitle = {Artificial Neural Networks and Machine Learning -- ICANN 2026},
+    series    = {Lecture Notes in Computer Science},
+    pages     = {40--52},
+    publisher = {Springer},
+    year      = {2026},
+    doi       = {10.1007/978-3-032-38407-2_4}
 }
 ```
 
