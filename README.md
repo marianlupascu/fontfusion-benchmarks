@@ -5,7 +5,9 @@
 **Benchmarks for Font-Conditioned Image Generation**
 
 <a href='https://arxiv.org/abs/2606.06066'><img src='https://img.shields.io/badge/arXiv-Preprint-red'></a>
-<img src='https://img.shields.io/badge/ICANN-2026-blue'>
+<a href='https://e-nns.org/icann2026/'><img src='https://img.shields.io/badge/ICANN-2026-blue'></a>
+<a href='https://huggingface.co/papers/2606.06066'><img src='https://img.shields.io/badge/%F0%9F%A4%97-Paper%20Page-yellow'></a>
+<a href='https://huggingface.co/datasets/maryanlup/CRAFT-TIDE'><img src='https://img.shields.io/badge/%F0%9F%A4%97-Benchmark-yellow'></a>
 ![GitHub stars](https://img.shields.io/github/stars/marianlupascu/fontfusion-benchmarks?style=social)
 
 **Official benchmark release for FontFusion (ICANN 2026)**
@@ -26,6 +28,8 @@ We introduce **CRAFT** and **TIDE**, the first benchmarks specifically designed 
 
 ## 🔥 Updates
 
+* **2026-11-17**: Benchmarks available on [🤗 Hugging Face](https://huggingface.co/datasets/maryanlup/CRAFT-TIDE)
+* **2026-09-14**: Presented at ICANN 2026 in Padova, Italy. See the [conference website](https://e-nns.org/icann2026/)
 * **2026-06-04**: CRAFT and TIDE benchmarks released publicly
 * **2026-05-29**: FontFusion accepted at ICANN 2026
 
