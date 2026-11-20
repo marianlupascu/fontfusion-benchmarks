@@ -50,6 +50,33 @@ benchmarks/
 
 Each line is a self-contained generation prompt. CRAFT prompts use short text segments in minimalist layouts for precise font fidelity measurement. TIDE prompts embed longer quoted texts in richer design contexts to test realistic complexity.
 
+## 🤗 Load from Hugging Face
+
+The benchmarks are also hosted on the Hugging Face Hub as [`maryanlup/CRAFT-TIDE`](https://huggingface.co/datasets/maryanlup/CRAFT-TIDE): one config per benchmark (`craft`, `tide`), a single `test` split, and a `text` column with one prompt per row, in the same order as the `.txt` files. You can browse and search the prompts in the [Data Studio](https://huggingface.co/datasets/maryanlup/CRAFT-TIDE/viewer).
+
+```bash
+pip install datasets
+```
+
+```python
+from datasets import load_dataset
+
+craft = load_dataset("maryanlup/CRAFT-TIDE", "craft", split="test")
+tide = load_dataset("maryanlup/CRAFT-TIDE", "tide", split="test")
+
+print(len(craft), len(tide))  # 1605 100
+print(tide[0]["text"])
+```
+
+To download the raw prompt files instead:
+
+```python
+from huggingface_hub import hf_hub_download
+
+path = hf_hub_download("maryanlup/CRAFT-TIDE", "craft.txt", repo_type="dataset")
+prompts = open(path, encoding="utf-8").read().splitlines()
+```
+
 ---
 
 ## 🚀 Evaluation Protocol
@@ -84,7 +111,13 @@ Font Consistency = mean(FontCLIP_cosine_similarity(reference_glyph, generated_cr
 
 ```python
 # Pseudocode
+from datasets import load_dataset
+
+benchmark_prompts = load_dataset("maryanlup/CRAFT-TIDE", "craft", split="test")["text"]  # or "tide"
+
 for prompt in benchmark_prompts:
+    if not prompt.strip():  # skip empty lines
+        continue
     for font in evaluation_fonts:
         image = generate(model, prompt, font_conditioning=font)
         text_crop = crop_text_region(image)
@@ -131,6 +164,7 @@ Font consistency (FontCLIP): FLUX.1 [dev] + FontFusion achieves **76.52%** vs. *
 ## 📦 Requirements
 
 * Python ≥ 3.9
+* [🤗 Datasets](https://github.com/huggingface/datasets) to load the prompts (`pip install datasets`)
 * [FontCLIP](https://github.com/yukistavailable/FontCLIP) for font similarity
 * Any OCR engine (PaddleOCR or Tesseract recommended)
 
